@@ -7,7 +7,6 @@
   "dependencies": {
     "@material-ui/core": "4.3.2",
     "@material-ui/icons": "4.2.1",
-    "@testing-library/jest-dom": "github:testing-library/jest-dom",
     "chartist": "0.10.1",
     "classnames": "2.2.6",
     "eslint": "^6.6.0",
@@ -54,6 +53,7 @@
     "typescript": "3.5.3"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "github:testing-library/jest-dom",
     "@testing-library/react": "^9.3.2",
     "eslint-config-prettier": "6.0.0",
     "eslint-plugin-prettier": "3.1.0",
