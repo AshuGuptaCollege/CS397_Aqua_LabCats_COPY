@@ -1,6 +1,6 @@
 import React from 'react'
 import {render, getByText} from '@testing-library/react'
-import {toHaveTextContent} from '@testing-library/jest-dom'
+import {toHaveTextContent} from '@testing-library/jest-dom/extend-expect'
 import Dashboard from './Dashboard.js'
 
 test('Dashboard should render passed props as content body and respond to callback props', () => {
