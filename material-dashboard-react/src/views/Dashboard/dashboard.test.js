@@ -1,5 +1,5 @@
 import React from 'react'
-import {render, fireEvent} from '@testing-library/react'
+import {render, getByText} from '@testing-library/react'
 import Dashboard from './Dashboard.js'
 
 test('Dashboard should render passed props as content body and respond to callback props', () => {
