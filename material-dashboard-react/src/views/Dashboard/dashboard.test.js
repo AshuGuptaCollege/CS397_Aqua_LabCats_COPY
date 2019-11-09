@@ -8,6 +8,7 @@ test('Dashboard should render passed props as content body and respond to callba
 
 
   expect(dashboard).toHaveTextContent("Study ID")
+  expect(dashboard).toHaveTextContent("title")
 
   // check that all the data columns are present
   /*
