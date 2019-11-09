@@ -9,6 +9,7 @@
     "@material-ui/icons": "4.2.1",
     "chartist": "0.10.1",
     "classnames": "2.2.6",
+    "eslint": "^6.6.0",
     "firebase": "^7.2.0",
     "history": "4.9.0",
     "moment": "^2.24.0",
@@ -52,6 +53,7 @@
     "typescript": "3.5.3"
   },
   "devDependencies": {
+    "@testing-library/react": "^9.3.2",
     "eslint-config-prettier": "6.0.0",
     "eslint-plugin-prettier": "3.1.0",
     "gulp": "4.0.2",
