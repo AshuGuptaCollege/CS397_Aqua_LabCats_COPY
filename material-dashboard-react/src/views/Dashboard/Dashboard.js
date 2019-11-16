@@ -136,7 +136,7 @@ export default function Dashboard() {
                 tabName: "Past Studies",
                 tabIcon: ScheduleIcon,
                 tabContent: (
-                <Card>
+                <Card data-testid="pastStudies">
                   <CardBody>
                     <Table
                       tableHeaderColor="primary"
