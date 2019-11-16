@@ -101,7 +101,7 @@ export default function Dashboard() {
     study["studies"][x.sid]["end"]
   ]);
   return (
-    <div>
+    <div data-testid="hello">
       <GridContainer>
         <GridItem xs={12}>
           <CustomTabs

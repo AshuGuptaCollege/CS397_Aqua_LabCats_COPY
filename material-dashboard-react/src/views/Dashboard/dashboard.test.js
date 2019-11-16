@@ -6,7 +6,7 @@ import Dashboard from './Dashboard.js'
 test('Dashboard should render passed props as content body and respond to callback props', () => {
   const {getByTestId} = render(<Dashboard/>)
 
-  expect(getByTestId('studiesTable').textContent).toBe('Your Research Studies:')
+  expect(getByTestId('hello').textContent).toBe('Your Research Studies:')
   //expect(dashboard).toHaveTextContent("title")
 
   // check that all the data columns are present
