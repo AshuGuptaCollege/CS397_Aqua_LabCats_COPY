@@ -3,12 +3,16 @@ import {render, getByText} from '@testing-library/react'
 //import '@testing-library/jest-dom'
 import Dashboard from './Dashboard.js'
 
-test('Dashboard should render passed props as content body and respond to callback props', () => {
-  const {getByTestId} = render(<Dashboard/>)
+test('Dashboard should render without error and display proper elements', () => {
   const {queryAllByTestId} = render(<Dashboard/>)
 
   expect(queryAllByTestId('studiesTable')).toBeTruthy();
   expect(queryAllByTestId('upcomingStudies')).toBeTruthy();
-  expect(getByTestId('upcomingStudies').textContent).toBe('Study IDtitletimerequirementpaymentlocationstart date/timeend date/time');
   expect(queryAllByTestId('pastStudies')).not.toBeTruthy();
+})
+
+test('Dashboard should have proper text', () => {
+  const {getByTestId} = render(<Dashboard/>)
+
+  expect(getByTestId('upcomingStudies').textContent).toBe('Study IDtitletimerequirementpaymentlocationstart date/timeend date/time');
 })
