@@ -101,11 +101,10 @@ export default function Dashboard() {
     study["studies"][x.sid]["end"]
   ]);
   return (
-    <div data-testid="hello">
+    <div data-testid="studiesTable">
       <GridContainer>
         <GridItem xs={12}>
           <CustomTabs
-            data-testid="studiesTable"
             title="Your Research Studies:"
             headerColor="primary"
             tabs={[
@@ -113,7 +112,7 @@ export default function Dashboard() {
                 tabName: "Upcoming Studies",
                 tabIcon: EventIcon,
                 tabContent: (
-                <Card>
+                <Card data-testid="upcomingStudies">
                   <CardBody>
                     <Table
                       tableHeaderColor="primary"
