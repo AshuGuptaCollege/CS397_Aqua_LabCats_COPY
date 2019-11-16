@@ -4,11 +4,11 @@ import {render, getByText} from '@testing-library/react'
 import Dashboard from './Dashboard.js'
 
 test('Dashboard should render without error and display proper elements', () => {
-  const {queryAllByTestId} = render(<Dashboard/>)
+  const {queryByTestId} = render(<Dashboard/>)
 
-  expect(queryAllByTestId('studiesTable')).toBeTruthy();
-  expect(queryAllByTestId('upcomingStudies')).toBeTruthy();
-  expect(queryAllByTestId('pastStudies')).not.toBeTruthy();
+  expect(queryByTestId('studiesTable')).toBeTruthy();
+  expect(queryByTestId('upcomingStudies')).toBeTruthy();
+  expect(queryByTestId('pastStudies')).toBeNull();
 })
 
 test('Dashboard should have proper text', () => {
