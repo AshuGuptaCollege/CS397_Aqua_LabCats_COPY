@@ -105,6 +105,7 @@ export default function Dashboard() {
       <GridContainer>
         <GridItem xs={12}>
           <CustomTabs
+            data-testid="studiesTable"
             title="Your Research Studies:"
             headerColor="primary"
             tabs={[

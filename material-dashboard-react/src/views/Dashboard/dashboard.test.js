@@ -1,14 +1,13 @@
 import React from 'react'
 import {render, getByText} from '@testing-library/react'
-import '@testing-library/jest-dom/extend-expect'
+//import '@testing-library/jest-dom'
 import Dashboard from './Dashboard.js'
 
 test('Dashboard should render passed props as content body and respond to callback props', () => {
-  const {dashboard} = render(<Dashboard/>)
+  const {getByTestId} = render(<Dashboard/>)
 
-
-  expect(dashboard).toHaveTextContent("Study ID")
-  expect(dashboard).toHaveTextContent("title")
+  expect(getByTestId('studiesTable').textContent).toBe('Your Research Studies:')
+  //expect(dashboard).toHaveTextContent("title")
 
   // check that all the data columns are present
   /*
