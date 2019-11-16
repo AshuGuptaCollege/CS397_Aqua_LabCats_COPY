@@ -5,10 +5,10 @@ import Dashboard from './Dashboard.js'
 
 test('Dashboard should render passed props as content body and respond to callback props', () => {
   const {getByTestId} = render(<Dashboard/>)
-  const {queryByTestId} = render(<Dashboard/>)
+  const {queryAllByTestId} = render(<Dashboard/>)
 
-  expect(queryByTestId('studiesTable')).toBeTruthy();
-  expect(queryByTestId('upcomingStudies')).toBeTruthy();
+  expect(queryAllByTestId('studiesTable')).toBeTruthy();
+  expect(queryAllByTestId('upcomingStudies')).toBeTruthy();
   expect(getByTestId('upcomingStudies').textContent).toBe('Study IDtitletimerequirementpaymentlocationstart date/timeend date/time');
-  expect(queryByTestId('pastStudies')).not.toBeTruthy();
+  expect(queryAllByTestId('pastStudies')).not.toBeTruthy();
 })
