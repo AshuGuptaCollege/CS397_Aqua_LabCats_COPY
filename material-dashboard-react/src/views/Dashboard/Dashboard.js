@@ -114,7 +114,7 @@ export default function Dashboard() {
                 tabContent: (
                 <Card data-testid="upcomingStudies">
                   <CardBody>
-                    <Table>
+                    <Table
                       tableHeaderColor="primary"
                       tableHead={[
                         "Study ID",
