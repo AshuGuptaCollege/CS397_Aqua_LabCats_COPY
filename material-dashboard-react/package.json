@@ -25,6 +25,7 @@
     "react-swipeable-views": "0.13.3"
   },
   "scripts": {
+    "cypress:open": "cypress open",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
