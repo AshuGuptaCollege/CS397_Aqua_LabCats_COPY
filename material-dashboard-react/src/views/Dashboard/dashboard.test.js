@@ -1,5 +1,5 @@
 import React from 'react'
-import {render, getByText} from '@testing-library/react'
+import {render, getByText, fireEvent} from '@testing-library/react'
 //import '@testing-library/jest-dom'
 import Dashboard from './Dashboard.js'
 
