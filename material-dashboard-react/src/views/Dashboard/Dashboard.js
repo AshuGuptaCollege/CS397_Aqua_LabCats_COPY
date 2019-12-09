@@ -133,7 +133,7 @@ export default function Dashboard() {
                 )
               },
               {
-                tabName: "Past Studies",
+                tabName: "Past Studie",
                 tabIcon: ScheduleIcon,
                 tabContent: (
                 <Card data-testid="pastStudies">
