@@ -51,7 +51,7 @@ export default function CustomTabs(props) {
               };
             }
             return (
-              <Tab data-testid={prop.tabName}
+              <Tab data-testid={prop.tabName} data-cy="button"
                 classes={{
                   root: classes.tabRootButton,
                   selected: classes.tabSelected,
@@ -68,7 +68,7 @@ export default function CustomTabs(props) {
       <CardBody>
         {tabs.map((prop, key) => {
           if (key === value) {
-            return <div key={key} data-testid={`content${key}`}>{prop.tabContent}</div>;
+            return <div key={key} data-testid={`content${key}`} data-cy={`content${key}`}>{prop.tabContent}</div>;
           }
           return null;
         })}

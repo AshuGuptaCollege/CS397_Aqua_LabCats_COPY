@@ -112,7 +112,7 @@ export default function Dashboard() {
                 tabName: "Upcoming Studies",
                 tabIcon: EventIcon,
                 tabContent: (
-                <Card data-testid="upcomingStudies">
+                <Card data-testid="upcomingStudies" data-cy="upcomingStudies">
                   <CardBody>
                     <Table
                       tableHeaderColor="primary"
@@ -136,7 +136,7 @@ export default function Dashboard() {
                 tabName: "Past Studies",
                 tabIcon: ScheduleIcon,
                 tabContent: (
-                <Card data-testid="pastStudies">
+                <Card data-testid="pastStudies" data-cy="pastStudies">
                   <CardBody>
                     <Table
                       tableHeaderColor="primary"
