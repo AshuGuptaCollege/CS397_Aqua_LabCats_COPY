@@ -20,7 +20,7 @@ test('Dashboard should have proper text', () => {
 test('Clicking on past studies should change visible studies', () => {
   const {queryByTestId} = render(<Dashboard/>)
 
-  fireEvent.click(getByTestId('Past Studies'))
+  fireEvent.click(queryByTestId('Past Studies'))
   expect(queryByTestId('studiesTable')).toBeTruthy();
   expect(queryByTestId('upcomingStudies')).toBeNull();
   expect(queryByTestId('pastStudies')).toBeTruthy();
