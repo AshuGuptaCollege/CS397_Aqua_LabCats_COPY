@@ -16,3 +16,12 @@ test('Dashboard should have proper text', () => {
 
   expect(getByTestId('upcomingStudies').textContent).toBe('Study IDtitletimerequirementpaymentlocationstart date/timeend date/time');
 })
+
+test('Clicking on past studies should change visible studies', () => {
+  const {queryByTestId} = render(<Dashboard/>)
+
+  fireEvent.click(getByTestId('Past Studies'))
+  expect(queryByTestId('studiesTable')).toBeTruthy();
+  expect(queryByTestId('upcomingStudies')).toBeNull();
+  expect(queryByTestId('pastStudies')).toBeTruthy();
+})
